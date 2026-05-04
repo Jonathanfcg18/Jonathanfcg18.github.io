@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
@@ -19,9 +20,9 @@
         </ul>
     </nav>
 
-    <main id ="perfil">
+    <main id="perfil">
         <h2>Perfil</h2>
-        <img src="/img/FotoPerfil.jpg" alt="Foto de perfil" width="200" height="200">
+        <img src="img/FotoPerfil.jpg" alt="Foto de perfil">
         <h3>Jonathan Franklin Cuasapaz Guilcamaigua</h3>
         <p>Estudiante en Escuela Politécnica Nacional</p>
         <h3>Correo:</h3>
@@ -34,7 +35,7 @@
         <a href="https://github.com/Jonathanfcg18" target="_blank">Enlace a mi perfil de GitHub</a>
     </main>
 
-    <section id ="quien-soy">
+    <section id="quien-soy">
         <h2>¿Quién soy yo?</h2>
         <p>Soy un estudiante de Ingeniería en Sistemas enfocado en el desarrollo de software y el
             aprendizaje continuo de tecnologías relacionadas con programación, redes y arquitectura de sistemas. Me
@@ -89,7 +90,7 @@
                 <p>Aplicación de escritorio con interfaz gráfica para la gestión de ayudantes de investigación en la 
                     Facultad de Ingeniería de Sistemas de la EPN.</p>
                 <p>Implementa roles diferenciados (Jefa de Departamento y Director de Proyecto), flujo de solicitud 
-                    y aprobación de ayudantes, registro de horas, reportes y sistema de notificaciones. </p>
+                    y aprobación de ayudantes, registro de horas, reportes y sistema de notificaciones.</p>
                 <p>Aplica el patrón MVC con capa DAO para la persistencia, y los patrones Singleton para entidades clave del dominio.</p>
                 <p>Stack: Java, Swing, SQLite, JDBC, patrón MVC, patrón DAO, PlantUML (diagramas UML).</p>
             </li>
@@ -108,17 +109,17 @@
     <section id="contacto">
         <h2>Contáctame</h2>
         <form action="">
-            <label for="nombre">Nombre:</label><br>
-            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required><br>
-            <label for="email">Correo:</label><br>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+            <label for="email">Correo:</label>
             <input type="email" name="email" pattern="[a-zA-Z0-9._%+-]+@epn\.edu\.ec" placeholder="example@epn.edu.ec"
-                required><br>
-            <label for="telefono">Teléfono(9 dígitos comenzando por 9, 8, 7 o 6):</label><br>
-            <input type="text" name="telefono" pattern="[9876][0-9]{8}" placeholder="Ingrese su teléfono" required><br>
-            <label for="direccion">Dirección(Calle 1, Calle 2, Ciudad):</label><br>
+                required>
+            <label for="telefono">Teléfono(9 dígitos comenzando por 9, 8, 7 o 6):</label>
+            <input type="text" name="telefono" pattern="[9876][0-9]{8}" placeholder="Ingrese su teléfono" required>
+            <label for="direccion">Dirección(Calle 1, Calle 2, Ciudad):</label>
             <input type="text" name="direccion"
                 pattern="[a-zA-Z0-9áéíóúÁÉÍÓÚ\.\-\s]+,\s[a-zA-Z0-9áéíóúÁÉÍÓÚ\.\-\s]+,\s[a-zA-ZáéíóúÁÉÍÓÚ\s]+"
-                placeholder="Calle, Calle, Ciudad" required><br>
+                placeholder="Calle, Calle, Ciudad" required>
             <br>
             <input type="submit" value="Enviar">
         </form>
