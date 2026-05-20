@@ -1,13 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Examen Primer Bimestre</title>
-    <link rel="stylesheet" href="misestilos.css">
+    <title>Examen</title>
     <link rel="stylesheet" href="framework.css">
+    <link rel="stylesheet" href="misestilos.css">
 </head>
+
 <body>
-    <h1>Examen Primer Bimestre</h1>
+
+    <!-- CABECERA -->
+    <header class="sombra">
+        <div class="fondo-primario padding">
+            <span class="texto-blanco espaciado">info@pets.com.ec | Llámanos: 022999000</span>
+        </div>
+        <nav class="d-flex justificar-entre espaciado padding">
+            <h3><span class="texto-primario">Pet</span><span class="texto-secundario">Shop</span></h3>
+            <ul class="d-flex justificar-entre sin-viñetas">
+                <li><a href="">El centro</a></li>
+                <li class="relleno-izquierda"><a href="">Servicios</a></li>
+                <li class="relleno-izquierda"><a href="">Planes y Precios</a></li>
+                <li class="relleno-izquierda"><a href="">Acceder</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SECCION 1: Servicios -->
+    <section>
+        <h1 class="texto-primario centrado">Nuestros Servicios</h1>
+        <div class="d-flex justificar-alrededor">
+            <div class="carta">
+                <h2 class="texto-primario centrado">Guardería</h2>
+                <img class="circulo-img" src="https://picsum.photos/id/237/200/200">
+                <p>Lorem ipsum dolor sit, amet consectetur </p>
+            </div>
+            <div class="carta">
+                <h2 class="texto-primario centrado">Campo</h2>
+                <img class="circulo-img" src="https://picsum.photos/id/169/200/200">
+                <p>Lorem ipsum dolor sit, amet consectetur </p>
+            </div>
+            <div class="carta">
+                <h2 class="texto-primario centrado">Zoológico</h2>
+                <img class="circulo-img" src="https://picsum.photos/id/433/200/200">
+                <p>Lorem ipsum dolor sit, amet consectetur </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION 2: Opinión de Clientes -->
+    <section class="fondo-neutro-frio">
+        <h1 class="texto-primario centrado">Opiniones de nuestros clientes</h1>
+        <p class="centrado">Más de 35.000 clientes satisfechos.</p>
+
+        <div class="d-flex justificar-alrededor">
+            <div>
+                <p class="negrita texto-primario centrado">Jesús Laiz Carbajo</p>
+                <p class="tamano-descripcion">"Lorem, ipsum dolor sit amet consectetur adipisicing elit."</p>
+            </div>
+            <div>
+                <p class="negrita texto-primario centrado">Pedro de Alfaro</p>
+                <p class="tamano-descripcion">"Lorem, ipsum dolor sit amet consectetur adipisicing."</p>
+            </div>
+            <div>
+                <p class="negrita texto-primario centrado">Luis Carballo</p>
+                <p class="tamano-descripcion">"Lorem, ipsum dolor sit amet consectetur exercitationem."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION 3: Contáctenos -->
+    <section class="fondo-negro">
+        <div class="d-flex justificar-alrededor">
+            <article>
+                <ul class="sin-viñetas tamano-descripcion">
+                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Uso de cookies</a></li>
+                    <li><a href="#">Condiciones Generales de Uso</a></li>
+                </ul>
+            </article>
+
+            <article>
+                <h2 class="texto-secundario">¿Necesitas más información?</h2>
+                <div>
+                    <form>
+                        <p class="texto-blanco">Contáctanos</p>
+                        <input class="caja-input" type="text" placeholder="Nombre*">
+                        <input class="caja-input" type="text" placeholder="Email*">
+                        <p class="texto-blanco tamano-descripcion"><input type="checkbox"> Acepto la Política de Privacidad*</p>
+                        <input class="boton-contactar" type="submit" value="Contactar">
+                        <p class="texto-blanco tamano-descripcion">*Campos obligatorios</p>
+                    </form>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="fondo-secundario centrado padding">
+        <p class="tamano-descripcion">2026 - Examen de AppWeb Bimestre 1, Aplicaciones Web</p>
+    </footer>
+
 </body>
+
 </html>

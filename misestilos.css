@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--fuente-base);
+    font-size: 1rem;
+}
+
+body {
+    width: 100%;
+}
+
+section {
+    padding: 12px 0;
+}
+
+h1 {
+    padding: 30px 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-primario);
+}
+
+.sombra {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    margin: 10px 0;
+    border: none;
+    outline: none;
+}
+
+.carta {
+    width: 180px;
+    padding: 10px;
+}
+
+.carta-img:hover {
+    transform: scale(1.05);
+}
+
+.padding {
+    padding: 12px 0;
+}
+
+.circulo-img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--color-secundario);
+    margin-left: -20px;
+    margin-bottom: 10px;
+}
+
+.tamano-descripcion {
+    font-size: 0.8rem;
+}
+
+.fondo-negro {
+    background-color: var(--color-negro);
+    padding: 40px;
+}
+
+.fondo-negro a {
+    color: var(--color-primario);
+    font-size: 0.8rem;
+}
+
+.fondo-negro ul li {
+    padding: 6px 0;
+}
+
+.caja-input {
+    display: block;
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 25px;
+    background-color: var(--color-blanco);
+    margin: 10px 0;
+}
+
+.boton-contactar {
+    display: block;
+    width: 300px;
+    padding: 12px;
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+footer p {
+    font-size: 0.8rem;
+}
