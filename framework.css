@@ -1,0 +1,152 @@
+/* ============================================================
+   FRAMEWORK.CSS — SPA Spa & Wellness
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Romanesco&display=swap');
+
+:root {
+  /* --- Colores --- */
+  --color-primario:      #A3A656;
+  --color-secundario:    #384001;
+  --color-neutro-claro:  #FFEFDF;
+  --color-neutro-frio:   #F2F6F6;
+  --color-blanco:        #FFFFFF;
+  --color-placeholder:   #9E9A9A;
+  --color-hover-menu:    #FFFF00;
+  --color-negro:         #000000;
+
+  /* --- Tipografía — familias --- */
+  --fuente-base:         'Inter', regular;
+  --fuente-decorativa:   'Romanesco', regular;
+
+  /* --- Tipografía — tamaños en px --- */
+  --tamano-hero:         96px;
+  --tamano-titulo1:      48px;
+  --tamano-titulo2:      32px;
+  --tamano-normal:       16px;
+  --tamano-menu:         16px;
+  --tamano-miniatura:    14px;
+
+  /* --- Tipografía — pesos --- */
+  --peso-normal:         400;
+  --peso-semibold:       600;
+  --peso-bold:           700;
+
+  /* --- Radios de borde --- */
+  --radio-boton:         35px;
+  --radio-cabecera-card: 15px 15px 0 0;
+  --radio-caja:          15px;
+
+  /* --- Dimensiones --- */
+  --alto-nav:            70px;
+  --alto-footer:         70px;
+  --alto-barra-promo:    100px;
+  --dim-circulo-externo: 255px;
+  --dim-circulo-interno: 233px;
+  --gap-cards:           134px;
+  --separacion-secciones: 100px;
+  --alto-caja-texto:     60px;
+  --alto-membresia:      770px;
+
+  /* --- Espaciado --- */
+  --relleno-horizontal:     40px;
+  --relleno-boton:          12px 28px;
+  --relleno-derecha:        30px;
+  --relleno-arriba:         30px;
+  --relleno-boton-membresia:20px 75px;
+}
+
+/* ============================================================
+   RESET BASE
+   ============================================================ */
+* { box-sizing: border-box; }
+
+/* ============================================================
+   DISPOSICIÓN — FLEX
+   ============================================================ */
+.d-flex                  { display: flex; }
+.d-flex-inline             { display: inline-flex; }
+.alinear-centro          { align-items: center; }
+.alinear-izquierda        { align-items: flex-start; }
+.justificar-entre        { justify-content: space-between; }
+.justificar-alrededor    { justify-content: space-around; }
+.justificar-centro       { justify-content: center; }
+.en-columna              { flex-direction: column; }
+.brecha-cards            { gap: var(--gap-cards); }
+
+/* ============================================================
+   FONDOS
+   ============================================================ */
+.fondo-primario     { background-color: var(--color-primario); }
+.fondo-secundario   { background-color: var(--color-secundario); }
+.fondo-neutro-claro { background-color: var(--color-neutro-claro); }
+.fondo-neutro-frio  { background-color: var(--color-neutro-frio); }
+.fondo-blanco       { background-color: var(--color-blanco); }
+
+/* ============================================================
+   TEXTO — COLOR
+   ============================================================ */
+.texto-blanco       { color: var(--color-blanco); }
+.texto-primario     { color: var(--color-primario); }
+.texto-secundario   { color: var(--color-secundario); }
+.texto-placeholder  { color: var(--color-placeholder); }
+.texto-negro        { color: var(--color-negro); }
+/* ============================================================
+   TEXTO — FAMILIA
+   ============================================================ */
+.fuente-base        { font-family: var(--fuente-base); }
+.fuente-decorativa  { font-family: var(--fuente-decorativa); }
+
+/* ============================================================
+   TEXTO — TAMAÑO
+   ============================================================ */
+.tamano-hero        { font-size: var(--tamano-hero); }
+.tamano-titulo1     { font-size: var(--tamano-titulo1); }
+.tamano-titulo2     { font-size: var(--tamano-titulo2); }
+.tamano-normal      { font-size: var(--tamano-normal); }
+.tamano-miniatura   { font-size: var(--tamano-miniatura); }
+
+/* ============================================================
+   TEXTO — PESO
+   ============================================================ */
+.peso-normal        { font-weight: var(--peso-normal); }
+.peso-semibold      { font-weight: var(--peso-semibold); }
+.peso-bold          { font-weight: var(--peso-bold); }
+
+/* ============================================================
+   TEXTO — ESTILO Y TRANSFORMACIÓN
+   ============================================================ */
+.mayusculas             { text-transform: uppercase; }
+.centrado               { text-align: center; }
+.sin-decoracion         { text-decoration: none; }
+
+/* ============================================================
+   ESPACIADO
+   ============================================================ */
+.margen-0               { margin: 0; }
+.relleno-0              { padding: 0; }
+.relleno-horizontal     { padding-left: var(--relleno-horizontal); padding-right: var(--relleno-horizontal); }
+.separacion-arriba      { padding-top: var(--separacion-secciones); }
+.separacion-abajo       { padding-bottom: var(--separacion-secciones); }
+.relleno-derecha        { padding-right: var(--relleno-derecha); }
+.relleno-arriba         { padding-top: var(--relleno-arriba); }
+
+/* ============================================================
+   BORDES Y FORMAS
+   ============================================================ */
+.redondeado-completo    { border-radius: 50%; }
+.redondeado-boton       { border-radius: var(--radio-boton); }
+.redondeado-cabecera    { border-radius: var(--radio-cabecera-card); }
+.redondeado-caja        { border-radius: var(--radio-caja); }
+.borde-circulo          { border: 4px solid var(--color-secundario); }
+
+/*Quitar bordes de cajas*/
+input[type="text"]{
+    border: none;
+    outline: none;
+}
+
+/* ============================================================
+   LISTAS
+   ============================================================ */
+.sin-viñetas            { list-style: none; }
